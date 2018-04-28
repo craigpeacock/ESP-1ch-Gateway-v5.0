@@ -689,14 +689,14 @@ void stateMachine()
 	  //
 	  case S_TX:
 	  
-		if (intr == 0x00) {
-#if DUSB>=1
-			Serial.println(F("TX:00"));
-			writeRegister(REG_IRQ_FLAGS, (uint8_t) 0xFF);				// reset interrupt flags
-			_event=0;
-			return;
-#endif
-		}
+//		if (intr == 0x00) {
+//#if DUSB>=1
+//			Serial.println(F("TX:00"));
+//			writeRegister(REG_IRQ_FLAGS, (uint8_t) 0xFF);				// reset interrupt flags
+//			_event=0;
+//			return;
+//#endif
+//		}
 		
 		// Set state to transmit
 		_state = S_TXDONE;

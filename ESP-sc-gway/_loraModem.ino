@@ -587,8 +587,7 @@ void txLoraModem(uint8_t *payLoad, uint8_t payLength, uint32_t tmst, uint8_t sfT
 		if (debug>=2) Serial.flush();
 	}
 #endif
-	_state = S_TX;
-		
+			
 	// 1. Select LoRa modem from sleep mode
 	//opmode(OPMODE_LORA);									// set register 0x01 to 0x80
 	
